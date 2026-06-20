@@ -1,4 +1,4 @@
-const API = "http://localhost:3000/tasks";
+const API = "https://task-manager-yarr.onrender.com";
 
 // Load Tasks
 async function loadTasks() {
