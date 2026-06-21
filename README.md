@@ -2,11 +2,11 @@
 
 ## Overview
 
-A full-stack Task Manager application built using Node.js, Express.js, MongoDB Atlas, HTML, CSS, and JavaScript. The application allows users to register, log in securely, and manage their tasks through complete CRUD operations.
+A full-stack Task Manager application built using Node.js, Express.js, MongoDB Atlas, HTML, CSS, and JavaScript. The application allows users to securely register, log in, and manage tasks using complete CRUD operations.
 
 ## Features
 
-* User Signup
+* User Registration (Signup)
 * User Login
 * JWT Authentication
 * Create Tasks
@@ -32,13 +32,15 @@ A full-stack Task Manager application built using Node.js, Express.js, MongoDB A
 * Express.js
 * MongoDB Atlas
 * Mongoose
-* JWT (JSON Web Token)
+* JSON Web Token (JWT)
 * bcryptjs
 
 ### Deployment
 
 * Frontend: Netlify
 * Backend: Render
+
+---
 
 ## Live Demo
 
@@ -50,24 +52,32 @@ https://capstonefinalprojectt.netlify.app/
 
 https://task-manager-yarr.onrender.com/
 
+### Project Walkthrough Video
+
+https://drive.google.com/file/d/1eT0ElNTXJvjdQkvbT8210yeRxH0QQKkb/view?usp=sharing
+
+---
+
 ## Project Structure
 
-```text
 task-manager/
+│
 ├── backend/
-│   ├── models/
-│   ├── server.js
-│   ├── package.json
-│   └── .env
+│ ├── models/
+│ ├── middleware/
+│ ├── server.js
+│ ├── package.json
+│ └── .env
 │
 ├── frontend/
-│   ├── index.html
-│   ├── login.html
-│   ├── signup.html
-│   ├── dashboard.html
-│   ├── script.js
-│   └── style.css
-```
+│ ├── index.html
+│ ├── login.html
+│ ├── signup.html
+│ ├── dashboard.html
+│ ├── script.js
+│ └── style.css
+
+---
 
 ## Installation
 
@@ -75,6 +85,7 @@ task-manager/
 
 ```bash
 git clone https://github.com/dhruvisheth12/task-manager.git
+cd task-manager
 ```
 
 ### Backend Setup
@@ -101,18 +112,38 @@ npm start
 
 Open the frontend files in your browser or deploy them using Netlify.
 
+---
 
-###live project walkthrough video
-https://drive.google.com/file/d/1eT0ElNTXJvjdQkvbT8210yeRxH0QQKkb/view?usp=sharing
+## API Endpoints
+
+### Authentication
+
+| Method | Endpoint | Description         |
+| ------ | -------- | ------------------- |
+| POST   | /signup  | Register a new user |
+| POST   | /login   | Login user          |
+
+### Tasks
+
+| Method | Endpoint   | Description   |
+| ------ | ---------- | ------------- |
+| GET    | /tasks     | Get all tasks |
+| POST   | /tasks     | Create task   |
+| PUT    | /tasks/:id | Update task   |
+| DELETE | /tasks/:id | Delete task   |
+
+---
 
 ## Challenges Faced
 
 * MongoDB Atlas connection configuration
 * Git repository and branch management
 * Render deployment setup
-* JWT authentication implementation
-* Frontend and backend integration
+* JWT Authentication implementation
+* Frontend and Backend integration
 * Environment variable configuration
+
+---
 
 ## Future Improvements
 
@@ -122,6 +153,8 @@ https://drive.google.com/file/d/1eT0ElNTXJvjdQkvbT8210yeRxH0QQKkb/view?usp=shari
 * Dark mode
 * Task search and filtering
 * Profile management
+
+---
 
 ## Author
 
