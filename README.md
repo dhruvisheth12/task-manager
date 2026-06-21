@@ -101,6 +101,10 @@ npm start
 
 Open the frontend files in your browser or deploy them using Netlify.
 
+
+###live project walkthrough video
+https://drive.google.com/file/d/1eT0ElNTXJvjdQkvbT8210yeRxH0QQKkb/view?usp=sharing
+
 ## Challenges Faced
 
 * MongoDB Atlas connection configuration
